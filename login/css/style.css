@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 12%;
-  background-image: url('../../assets/img/wallpaper.png'); 
+  background-image: url('../../assets/img/wallpaper2.png'); 
   background-repeat: no-repeat;        
   position: relative;       
   font-family: 'Titillium Web', sans-serif;
@@ -79,7 +79,7 @@ label {
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
   left: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #ab67ab;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
@@ -113,7 +113,7 @@ input, textarea {
   padding: 5px 10px;
   background: none;
   background-image: none;
-  border: 1px solid #a0b3b0;
+  border: 1px solid #5d4d7a;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
@@ -157,14 +157,14 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #ab67ab;
   color: #ffffff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
 .button:hover, .button:focus {
-  background: #179b77;
+  background: #5d4d7a;
 }
 
 .button-block {
