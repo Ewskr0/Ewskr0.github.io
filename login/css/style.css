@@ -33,13 +33,13 @@ body{
 }
 .box button{
   background:#ab67ab;
-  border:0;
+  display:block; 
   color:#fff;
+  width:65%;
+  margin:20px auto;
   padding:15px;
   font-size:20px;
-  width:60%;
-  margin:20px auto;
-  display:block;
+  border:0;
   cursor:pointer;
 }
 .box button:active{
