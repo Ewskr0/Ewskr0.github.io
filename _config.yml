@@ -31,12 +31,12 @@ links:
     url: /
   - title: my posts
     url: /posts
-  - title: series
-    url: /series
-  - title: tags
-    url: /tags
-  - title: about me
-    url: /about
+#  - title: series
+#    url: /series
+#  - title: tags
+#    url: /tags
+#  - title: about me
+#    url: /about
 # projects in header index
 projects:
   - name: asciilang
