@@ -740,17 +740,24 @@ html,
 body {
     height: 100%
 }
+
+.header-site{
+    background-image:url('../img/wallpaper2.png'); 
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;    
+}
+
 .header-site,
 .header-post,
 .page-header {
-    background-color: #2e273d;
-    background-repeat: no-repeat;        
-    position: relative;        
-    width: 100%;            
-    margin-left: auto;      
-    margin-right: auto; 
+    background: #5d4d7a;
     height: 100%;
 }
+
 .header-site .content,
 .header-post .content,
 .page-header .content {
@@ -784,8 +791,6 @@ body {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    background-image: url('../img/wallpaper.png');        
-
 }
 @media only screen and (max-width: 320px) {
     .header-site .recent:last-child {
@@ -912,7 +917,7 @@ body {
 }
 .tree-posts h3:before {
     content: "";
-    width: 130px;
+    width: 100px;
     height: 4px;
     position: absolute;
     bottom: 0;

@@ -1,13 +1,14 @@
 # Site settings
-title: Ewskr0
-description: "Under construction"
-url: "http://Ewskr0.github.io"
+title: Ewskr0 - WorkStation
+description: Under Construction ..
+baseurl: '' # for test: remove string '/space-jekyll-templa' to ''
+url: "http://Ewskr0.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
-username: Ewann Pellé
-user_title: Ewann Pellé - FrontEnd
+username: Ewskr0
+user_title: Ewskr0 WorkStation
 email: ewskr0@gmail.com
 twitter_username: loremipsum
-github_username:  Ewskr0
+github_username:  loremipsum
 gplus_username:  loremipsum
 disqus_username: loremipsum
 
@@ -28,17 +29,17 @@ compress_html:
 links:
   - title: home
     url: /
-  - title: my documents
+  - title: my posts
     url: /posts
   - title: series
     url: /series
   - title: tags
     url: /tags
-  #- title: about me
-  # url: /about
+  - title: about me
+    url: /about
 # projects in header index
 projects:
-  - name: OCR
+  - name: asciilang
     url: https://github.com/victorvoid/asciilang
   - name: vim-frontend
     url: https://github.com/victorvoid/vim-frontend
