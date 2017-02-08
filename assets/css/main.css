@@ -765,7 +765,6 @@ body {
     text-align: center
 }
 .header-site li {
-    background-image: url('../img/wallpaper.png');        
     margin: 0;
     list-style-type: none
 }
@@ -785,6 +784,8 @@ body {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
+    background-image: url('../img/wallpaper.png');        
+
 }
 @media only screen and (max-width: 320px) {
     .header-site .recent:last-child {
