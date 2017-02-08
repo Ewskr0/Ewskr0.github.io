@@ -743,7 +743,7 @@ body {
 .header-site,
 .header-post,
 .page-header {
-    background-image: url('../img/wallpaper.png');        
+    background-color: #2e273d;
     background-repeat: no-repeat;        
     position: relative;        
     width: 100%;            
@@ -765,6 +765,7 @@ body {
     text-align: center
 }
 .header-site li {
+    background-image: url('../img/wallpaper.png');        
     margin: 0;
     list-style-type: none
 }
