@@ -741,15 +741,7 @@ body {
     height: 100%
 }
 
-.header-site{
-    background-image:url('../img/wallpaper2.png'); 
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;    
-}
+
 
 .header-site,
 .header-post,
@@ -850,6 +842,15 @@ body {
     .header-site .site-description {
         font-size: 2.5rem
     }
+}
+.header-site{
+    background-image:url('../img/wallpaper2.png'); 
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;    
 }
 .header-post {
     height: 62px;
