@@ -511,13 +511,15 @@ aside nav ul a {
     font-weight: 300;
     font-style: normal;
     color: #b3b3b1;
-    font-size: 1.2rem;
 }
 aside nav ul a:hover {
     background: rgba(135, 116, 169, 0.42)
 }
 aside.slide {
     bottom: 0
+}
+a.slideButton.slide {
+    pointer-events: none
 }
 a.slideButton.slide {
     pointer-events: none
