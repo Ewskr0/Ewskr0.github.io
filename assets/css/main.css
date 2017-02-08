@@ -463,11 +463,12 @@ aside #topmenu ul li:first-child {
 aside #topmenu ul li:first-child span {
     border-radius: 100%;
     width: 20px;
-    height: 20px;
+    height: 28px;
     text-align: center;
     background-color: #000;
     color: #efb102;
     font-weight: 300
+
 }
 aside #topmenu ul li:nth-child(3) {
     background: #ab67ab;
@@ -484,7 +485,7 @@ aside #topmenu ul li span {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: .813rem;
+    font-size: 1.4rem;
     color: #ab67ab
 }
 @media only screen and (max-width: 37.5rem) {
@@ -508,9 +509,10 @@ aside nav ul a {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 800;
     font-style: normal;
     color: #b3b3b1;
+    font-size: 1.2rem;
 }
 aside nav ul a:hover {
     background: rgba(135, 116, 169, 0.42)
