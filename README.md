@@ -1,3 +1,1 @@
-# Ewskr0
-Personal Blog
-# Under construction
+# Ewskr0.github.io

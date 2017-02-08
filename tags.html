@@ -1,37 +1,37 @@
 ---
-layout: default
-title: Tag
-permalink: /tags.html
-exclude_from_nav: true
+layout: minimal
+title: "#Tags"
+permalink: /tags/index.html
+description: "Take a look at my beautiful tags."
 ---
 
-<div style="margin: 2rem auto;">
-<div class="tags-pagee">
-<ul class="tags" style="padding:0     margin-bottom: 20px;">
-	  {% for tag in site.tags %}
-  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-    <a id="route" href="#{{ tag | first | slugize }}">
-      {{ tag | first }}
-      <span>{{ tag | last | size }}</span>
-    </a>
-  </li>
-{% endfor %}
-</ul>
-</div>
-<br>
-<div id="archives">
-{% for tag in site.tags %}
-  <div class="archive-group">
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h3 id="#{{ tag_name | slugize }}">#{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
-    {% for post in site.tags[tag_name] %}
-    <article class="archive-item">
-      <p><h4><a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4></p>
-      <p class="tags-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-    </article>
+<h2>Tags</h2>
+<div class="tags">
+{% assign tags_list = site.tags %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %}
+        <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
     {% endfor %}
-  </div>
+  {% else %}
+    {% for tag in tags_list %}
+        <a data-scroll href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    {% endfor %}
+  {% endif %}
+{% assign tags_list = nil %}
+</div>
+
+{% for tag in site.tags  %}
+    <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
+    <ul class="post-list">
+        {% assign pages_list = tag[1] %}
+        {% for post in pages_list reversed %}
+            {% if post.title != null %}
+            {% if group == null or group == post.group %}
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
 {% endfor %}
-</div>
-</div>
