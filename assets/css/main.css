@@ -456,7 +456,7 @@ aside #topmenu ul li {
     display: inline-block;
 }
 aside #topmenu ul li:first-child {
-    background: #efb102;
+    background: #00cbc3;
     padding: 4px 10px 4px 20px;
     margin-left: -10px;
 }
@@ -465,8 +465,8 @@ aside #topmenu ul li:first-child span {
     width: 20px;
     height: 20px;
     text-align: center;
-    background-color: #000;
-    color: #efb102;
+    /*background-color: #000;*/
+    color: #00cbc3;
     font-weight: 300
 }
 aside #topmenu ul li:nth-child(3) {
@@ -508,7 +508,7 @@ aside nav ul a {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 800;
     font-style: normal;
     color: #b3b3b1;
 }
