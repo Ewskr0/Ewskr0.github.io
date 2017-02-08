@@ -910,7 +910,7 @@ body {
 }
 .tree-posts h3:before {
     content: "";
-    width: 100px;
+    width: 130px;
     height: 4px;
     position: absolute;
     bottom: 0;
