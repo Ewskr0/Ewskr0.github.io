@@ -1,4 +1,3 @@
-# spaghetti.ga
+# Ewskr0
 Personal Blog
-# License
-MIT
+# Under construction
