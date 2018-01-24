@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="461">
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-657">
-              <caret line="3202" column="0" lean-forward="true" selection-start-line="3202" selection-start-column="0" selection-end-line="3202" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="3763" column="29" lean-forward="false" selection-start-line="3763" selection-start-column="29" selection-end-line="3763" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -54,11 +54,11 @@
       <find>width</find>
       <find>.jpg</find>
       <find>4c5c96</find>
-      <find>jpg</find>
       <find>2e3141</find>
       <find>rgba(255, 255, 255, 0.35)</find>
       <find>rgb(48, 48, 48)</find>
       <find>rgba(53, 56, 73, 0.95)</find>
+      <find>jpg</find>
     </findStrings>
     <replaceStrings>
       <replace>353535</replace>
@@ -72,8 +72,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/carte.html" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -159,12 +159,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516793038951</updated>
-      <workItem from="1516793040607" duration="5983000" />
+      <workItem from="1516793040607" duration="6224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5983000" />
+    <option name="totallyTimeSpent" value="6224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1922" height="1059" extended-state="7" />
@@ -208,14 +208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657">
-          <caret line="3202" column="0" lean-forward="true" selection-start-line="3202" selection-start-column="0" selection-end-line="3202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -224,6 +216,14 @@
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#2;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="3763" column="29" lean-forward="false" selection-start-line="3763" selection-start-column="29" selection-end-line="3763" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
