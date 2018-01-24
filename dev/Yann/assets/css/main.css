@@ -3791,6 +3791,7 @@
 			padding-top: 6.5em;
 		}
 
+
 	}
 
 	@media screen and (max-width: 980px) {
@@ -3866,8 +3867,21 @@
 
 	}
 
+@media screen and (min-width: 1280px) {
+
 	.image2,.image2 img {
 		border-radius: 0px !important;
 		height: 22em !important;
 		width: 26em !important;
 	}
+
+}
+
+.pizzaEl p{
+	padding-top: 0px;
+}
+.pizzaEl h4{
+	margin-bottom: 0px;
+}
+
+
