@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="45" column="74" lean-forward="false" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+              <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#2;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="2790" column="9" lean-forward="false" selection-start-line="2790" selection-start-column="3" selection-end-line="2790" selection-end-column="9" />
+            <state relative-caret-position="615">
+              <caret line="3869" column="24" lean-forward="false" selection-start-line="3869" selection-start-column="24" selection-end-line="3869" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -57,9 +57,11 @@
       <find>rgba(255, 255, 255, 0.35)</find>
       <find>rgb(48, 48, 48)</find>
       <find>rgba(53, 56, 73, 0.95)</find>
-      <find>jpg</find>
       <find>header</find>
+      <find>.image</find>
+      <find>border-rad</find>
       <find>.jpg</find>
+      <find>jpg</find>
     </findStrings>
     <replaceStrings>
       <replace>353535</replace>
@@ -72,9 +74,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/carte.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -160,12 +162,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516793038951</updated>
-      <workItem from="1516793040607" duration="6771000" />
+      <workItem from="1516793040607" duration="8503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6771000" />
+    <option name="totallyTimeSpent" value="8503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1922" height="1059" extended-state="7" />
@@ -201,14 +203,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="2790" column="9" lean-forward="false" selection-start-line="2790" selection-start-column="3" selection-end-line="2790" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/carte.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -220,11 +214,19 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="45" column="74" lean-forward="false" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+          <caret line="57" column="60" lean-forward="false" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#2;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#section#3;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="3869" column="24" lean-forward="false" selection-start-line="3869" selection-start-column="24" selection-end-line="3869" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
