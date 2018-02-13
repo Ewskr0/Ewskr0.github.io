@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CSIR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Accueil</a></li>
+							<li><a href="#one">Le principe</a></li>
+							<li><a href="#two">En details</a></li>
+							<li><a href="#three">Sources</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 spotlights fullscreen fade-up">
+							<section>
+						<a href="#" class="logo"><img src="images/logo.png" alt="" data-position="center center" /></a>
+						<div class="content">
+						<div class="inner">
+							<h1>Compressed Sensing Image Recovery</h1>
+							<p>Reconstitution d'images déteriorées</p>
+							<p>par <a href="https://github.com/Lyro1/CSIRe">Brainless</a>.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Le principe</a></li>
+							</ul>
+						</div>
+					</div>
+					</section>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/logo.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Image d'origine</h2>
+									<p>Nous partons d'une image abimée, notre but etant de la réparer.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Details</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/logo.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Détection de la géométrie</h2>
+									<p>La détection de la géométrie est la première étape, et l'une des plus importante dans la reconstruction d'une image avec les algorithmes d'inpainting. En effet, il est nécessaire de conserver la géométrie générale de l'image lors de sa reconstruction, afin d'obtenir une structure cohérente à l'oeil. En effet, si une ligne a été partiellement détruite, par exemple, il est logique de tenter de relier les deux extrémités afin de la prolonger. C'est pour garantir cette cohérence que la détection de la géométrie constitue une partie importante de la reconstruction d'image.</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Details</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/logo.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Sélection de la zone à reconstruire</h2>
+									<p>expliquer le bail vite fait</p>
+									<ul class="actions">
+										<li><a href="#" class="button">Details</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>En détails</h2>
+							<h3>1. Détection de la géométrie</h3>
+							<p>
+								La détection de la géométrie est la première étape, et l'une des plus importante dans la reconstruction d'une image avec les algorithmes d'inpainting. En effet, il est nécessaire de conserver la géométrie générale de l'image lors de sa reconstruction, afin d'obtenir une structure cohérente à l'oeil. En effet, si une ligne a été partiellement détruite, par exemple, il est logique de tenter de relier les deux extrémités afin de la prolonger. C'est pour garantir cette cohérence que la détection de la géométrie constitue une partie importante de la reconstruction d'image.
+							</p>
+							<p>
+								De nombreuses méthodes existent afin de réaliser cette détection. On peut citer par exemple les algorithmes basés sur une matrice de covariance (1). Cette méthode, qui est le fruit d'un groupe de recherche de l'université de Tianjin (2), reprend les principes des algorithmes basés sur les PDE (Partial Differential Equations) (3), en tentant de préserver autant que possible les bordures et les points de changement de la géométrie globale (intersection de lignes par exemple). Cette méthode nécessite cependant de nombreux calculs couteux, et se révèle certe souvent plus précise, mais également significativement plus longue en terme de temps d'execution. C'est pourquoi ce n'est pas la technique qui a été retenue pour ce programme.
+							</p>
+							<p>
+								La méthode de détection proposée ici est l'algorithme de détection des coins de Harris (4). Cet algorithme permet de détecter les structures à conserver au sein de l'image reconstruite. Cette première étape est réalisée en faisant un parcours de l'image selon les étapes suivantes:
+							</p>
+							<div class="features">
+								<section>
+									<span class="icon major fa-chevron-right"></span>
+									<h3>Binarisation de l'image</h3>
+									<p>On binarise l'image (nuance de noirs et de blancs).</p>
+								</section>
+								<section>
+									<span class="icon major fa-chevron-right"></span>
+									<h3>Initalisation de la matrice</h3>
+									<p>On initialise une matrice qui nous permettra de marquer les pixels qui sont des coins de Harris.</p>
+								</section>
+								<section>
+									<span class="icon major fa-chevron-right"></span>
+									<h3>Remplissage de la matrice</h3>
+									<p>On parcours l'image et pour chaque pixel, on étudie sa différence d'intensité par rapport à ses voisins directs. Si cette différence d'intensité est supérieure à une valeur maximale (ici deltaMax), le pixel est marqué dans la matrice comme un coin de Harris. A noter que cette valeur d'intensité est comprise entre 0 et 1, et correspond à la somme des valeurs r,g,b d'un pixel divisé par 3x255.</p>
+								</section>
+								<section>
+									<span class="icon major fa-chevron-right"></span>
+									<h3>Stockage de la matrice</h3>
+									<p>On sauvegarde notre matrice puis nous construisons l'image associée</p>
+								</section>
+							</div>
+							<p>
+								Toute la difficulté consiste à trouver une valeur de deltaMax correcte, qui permette d'obtenir une matrice de coins de Harris aussi précise que possible pour le plus grand nombre d'image possible. Il est donc nécessaire de tester cet algorithme sur une vaste collection d'images afin d'ajuster cette valeur. A l'heure actuelle, la valeur de deltaMax est fixée à 0.15. Cette valeur semble fournir des résultats concluants sur notre set d'image actuel, et reflette correctement la géométrie globale des images.
+							</p>
+							<h3>2. Sélection de la zone à reconstruire</h3>
+							<p>todo</p>
+							<h3>3. Algorithme de reconstruction (inpaiting)</h3>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Sources</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<ul>
+								<li><b>Github du projet: </b><a href="https://github.com/Lyro1/CSIR">CSIR</a></li>
+								<li><b>Covariance,</b> <i>Wikipedia</i> <a href="https://fr.wikipedia.org/wiki/Covariance">[ https://fr.wikipedia.org/wiki/Covariance ]</a></li>
+								<li><b>Partial Differential Equation Inpainting Method Based on Image Characteristics,</b> <i>Fang Zhang, Ying Chen, Zhitao Xiao, Lei Geng, Jun Wu, Tiejun Feng, Ping Liu, Yufei Tan, Jinjiang Wang</li>
+								<li><b>Image Inpainting,</b> <i> Marcelo Bertalmio, Guillermo Sapiro, Vicent Caselles, Coloma Ballester</i> : <a href="http://www.dtic.upf.edu/~mbertalmio/bertalmi.pdf">[ http://www.dtic.upf.edu/~mbertalmio/bertalmi.pdf ]</a></li>
+								<li><b>Harris corner detector,</b> <i>extrait de la documentation OpenCV :</i> <a href="https://docs.opencv.org/trunk/d4/d7d/tutorial_harris_detector.html">  [ https://docs.opencv.org/trunk/d4/d7d/tutorial_harris_detector.html ]</a></li>
+								<li><b>Algorithme d'Inpainting,</b> <i> E-PLE</i> : <a href="http://www.ipol.im/pub/art/2013/54/article.pdf">[ http://www.ipol.im/pub/art/2013/54/article.pdf ]</a></li>
+
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+						<div class="inner">
+							<ul class="menu">
+								<li>© Untitled. All rights reserved.</li><li>Images: <a href="http://unsplash.com">Unsplash</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
