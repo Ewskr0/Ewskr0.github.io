@@ -3510,6 +3510,10 @@
 	}
 
 /* Footer */
+	#footer {
+		text-align: center;
+	}
+
 
 	#sidebar + #wrapper + #footer {
 		margin-left: 18em;
