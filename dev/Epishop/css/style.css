@@ -141,7 +141,7 @@ HEADER
 
 @media (max-width: 768px) {
 	.navbar-default {
-		background: rgba(64, 75, 97, 0.9);
+    background: rgba(17,21,23,.9);
 	}
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
